@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+font-size: 62.5%;
+background-color: #f5f5f5;
+overflow-x: hidden;
+
+}
+header{
+    width: 100%;
+    height:4.5rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 138, 0);
+}
+header>img{
+    height: 4rem;
+    margin-left: 3rem;
+}
+.T-my{
+    margin-left: 13rem;
+}
+.T-my,
+.T-xiazai
+{
+    height: 3rem;
+}
+
+.bigpic>img{
+    width: 100%;
+}
+.bigpic .yema{
+    font-size: 1.6rem;
+    text-align: center;
+    width: 5rem;
+    color:white;
+    background-color: rgb(0,0,0,.4);
+    border-radius: 1rem;
+    position: absolute;
+    top: 18.5rem;
+    left: 32.5rem;
+}
+.bigpic{
+    font-size: 1.6rem;
+    background-color: white;
+    position: relative;
+}
+.bigpic>p{
+font-size: 2.1rem;
+margin: 2rem;
+font-weight: 700;
+}
+.bigpic>span{
+    color: rgb(219, 3, 3);
+    font-weight: 700;
+    margin-left: 2rem;
+}
+.bigpic .phone{
+    width: 1.5rem;
+    margin-left: 8rem;
+}
+.bigpic>p:nth-of-type(2){
+    font-size: 1.4rem;
+    color: rgb(155, 154, 154);
+    font-weight: 400;
+}
+.bigpic div{
+    display: inline-block;
+    background-color: #dee9f0;
+    padding: .8rem;
+    color: #849aae;
+}
+.bigpic div:nth-of-type(2){
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.xinxi,
+.tese,
+.huxing,
+.xuexiao,
+.weizhi,
+.tuijian
+{
+    margin-top: 2rem;
+    background-color: white;
+    font-size: 1.4rem;
+}
+.xinxi div{
+    display: inline-block;
+    width: 49%;
+    line-height: 6rem;
+    
+}
+.xinxi ul li{
+    list-style: none;
+    margin: 0 2rem;
+    line-height: 6rem;
+border-bottom: 1px solid rgb(218, 216, 216);
+}
+.xinxi p,
+.tese p:nth-of-type(3),
+.xuexiao p,
+.gengduo
+{
+    line-height: 6rem;
+    text-align: center;
+    color: #999999;
+}
+.title{
+    color: #ff9326;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin:0 2rem;
+    padding: 2rem 0;
+    border-bottom:1px solid rgb(218, 216, 216) ;
+}
+.tese p:nth-of-type(2){
+    margin: 0 2rem;
+    padding: 2rem 0;
+    border-bottom:1px solid rgb(218, 216, 216) ;
+}
+.geju-1 {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem;
+    margin: 0 3rem;
+    border-bottom: 1px solid #ffa33a;
+}
+.geju-1-copy {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem;
+    margin: 0 3rem;
+  
+}
+.huxing img{
+    width: 10rem;
+    
+}
+.geju-2{
+  margin-left: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.geju-2 p:nth-of-type(1){
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.geju-2 span{
+    display: inline-block;
+    padding: .5rem;
+    background-color: #f4f7f9;
+    color: #849aae;
+}
+.xuexiao li,
+.weizhi li,
+.tuijian li{
+    padding: 2rem 0;
+    margin: 0 3rem;
+    list-style: none;
+    border-bottom: 1px solid rgb(218, 216, 216) ;
+}
+.xuexiao li span{
+    color: #999999;
+}
+.xuexiao ul li:nth-of-type(1),
+.weizhi ul li:nth-of-type(1),
+.tuijian ul li:nth-of-type(1)
+{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.weizhi img{
+width: 100%;
+}
+.geju-1 img{
+    width: 10rem;
+}
+.geju-2 .hongbai span{
+color: #8b8b8b;
+background-color:transparent;
+}
+.geju-2 .jiage{
+    color: #ff8a00;
+    font-weight: 700;
+}
+.geju-2 .xuequ{
+  width: 5rem;
+}
+.tuijian .geju-1{
+    border-bottom: 1px rgb(218, 216, 216) solid;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(59, 58, 58);
+}
+footer h1{
+    line-height: 4rem;
+    font-size: 1.8rem;
+}
+footer>h1>a{
+text-decoration: none;
+color: white;
+}
+footer .z-dibu{
+width: 80%;
+margin: 0 auto;
+display: flex;
+flex: 1;
+}
+footer .z-dibu .z-left{
+flex-grow: 1;
+display: flex;
+
+}
+footer .z-dibu .z-left .z-left-left{
+box-sizing: border-box;
+padding: 2rem 0rem;
+}
+footer .z-dibu .z-left .z-left-right{
+color: white;
+font-size: 2rem;
+box-sizing: border-box;
+padding: 2rem 4rem;
+} 
+footer .z-dibu .z-right{
+flex-grow: 1;
+display: flex;
+
+}
+footer .z-dibu .z-right .z-right-left{
+box-sizing: border-box;
+padding: 2rem 0rem;
+}
+footer .z-dibu .z-right .z-right-right{
+color: white;
+font-size: 2rem;
+box-sizing: border-box;
+padding: 2rem 4rem;
+}
+footer h2{
+text-align: center;
+color: white;
+
+}
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找房无忧-验证码登录</title>
+    <script src="./T-js/rem.js"></script>
+    <link rel="stylesheet" href="./T-css/T-12.css">
+</head>
+
+<body>
+    <header>
+        <img src="./T-img/index/logo.jpg" class="T-logo" alt="">
+        <img src="./T-img/index/my.jpg" class="T-my" alt="">
+        <img src="./T-img/index/xiazai.jpg" class="T-xiazai" alt="">
+    </header>
+
+    <section class="rentalAddr">
+        <p><strong>首页</strong> > <span>我的</span> > <span>登录</span></p>
+    </section>
+
+    <section class="registerForm login">
+        <form action="#">
+            <ul class="title">
+                <li>普通登录</li>
+                <li class="active">验证码快捷登录</li>
+            </ul>
+            <div class="customLogin active">
+                <ul>
+                    <li class="mima">
+                        <input type="text" placeholder="请输入手机号码" />
+                        <a id="code" href="#">发送验证码</a>
+
+                    </li>
+                    <li><input type="text" placeholder="请输入短信中的验证码" /></li>
+                </ul>
+                <input class="registerBtn" type="submit" value="验证并登录" />
+                <div class="tiShi">
+                    <a href="#">立即注册</a>
+                    <a href="#">忘记密码</a>
+                </div>
+            </div>
+
+        </form>
+    </section>
+</body>
+</html>
+
+<script>
+    var get = document.getElementById('code');
+    var i = 60;
+    console.log(get);
+    get.onclick = function () {
+        var times = setInterval(function () {
+            i--;
+            get.innerHTML = i + '秒后重新获取';
+            get.style.color = "#666"
+            // console.log(num);                                                                                                                                                                                                                                                                                                                                                                                                
+            if (i == 50) {
+                alert("666666")
+            } else if (i == 0) {
+                clearInterval(times);
+            }
+        }, 1000);
+    }
+</script>

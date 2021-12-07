@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../z-css/z-01首页.css">
     <script src="../z-js/vue.js"></script>
-    <!-- <script src="../z-js/首页.js"></script> -->
+    <!-- <script src="../../../T-js/rem.js"></script> -->
     <style>
         .mb {
             width: 100%;
@@ -66,6 +66,10 @@
             right: 0;
             background-color: rgb(255, 138, 0);
         }
+
+        a {
+            text-decoration: none;
+        }
     </style>
 
 
@@ -79,8 +83,13 @@
             <img class="z-logo" src="../../z-img/logo.jpg" alt="111">
         </span>
         <span>
-            <img class="z-my" src="../../z-img/my.jpg" alt="111">
-            <img class="z-xiazai" src="../../z-img/xiazai.jpg" alt="111">
+            <a href="../../../T-10.html">
+                <img class="z-my" src="../../z-img/my.jpg" alt="111">
+            </a>
+            <a href="">
+                <img class="z-xiazai" src="../../z-img/xiazai.jpg" alt="111">
+            </a>
+
         </span>
 
     </header>
@@ -107,19 +116,19 @@
                 </a>
             </li>
             <li>
-                <a v-bind:href='url1'>
+                <a href="../z-html/z-03.html">
                     <img src="../../z-img/index_05.png">
                     <p>新房</p>
                 </a>
             </li>
             <li>
-                <a v-bind:href='url2'>
+                <a href="../../../T-5.html">
                     <img src="../../z-img/index_07.png">
                     <p>租房</p>
                 </a>
             </li>
             <li>
-                <a v-bind:href='url3'>
+                <a href="../z-html/z-03.html">
                     <img src="../../z-img/index_09.png">
                     <p>卖房</p>
                 </a>

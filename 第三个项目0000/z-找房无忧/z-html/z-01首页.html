@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../z-css/z-01首页.css">
+    <script src="../z-js/vue.js"></script>
+    <!-- <script src="../z-js/首页.js"></script> -->
+    <style>
+        .mb {
+            width: 100%;
+            height: 10rem;
+            position: fixed;
+            top: 0;
+            opacity: .5;
+            background-color: white;
+        }
+
+        .pic1 {
+            width: 10rem;
+            height: 10rem;
+            position: fixed;
+            top: 0;
+            left: 10rem;
+        }
+
+        .pic2 {
+            width: 2rem;
+            height: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .wr {
+            width: 20rem;
+            height: 2rem;
+            position: fixed;
+            font-size: 2rem;
+            top: 1rem;
+            left: 40rem;
+        }
+
+        .wr1 {
+            width: 20rem;
+            height: 2rem;
+            position: fixed;
+            font-size: 1.5rem;
+            top: 4rem;
+            left: 38rem;
+        }
+
+        .wr2 {
+            width: 20rem;
+            height: 10rem;
+            position: fixed;
+            font-size: 1.5rem;
+            color: white;
+            text-align: center;
+            line-height: 10rem;
+            font-size: 2rem;
+            top: 0;
+            right: 0;
+            background-color: rgb(255, 138, 0);
+        }
+    </style>
+
+
+</head>
+
+<body id="btn">
+
+    <!-- 第一部分 头部 -->
+    <header>
+        <span>
+            <img class="z-logo" src="../../z-img/logo.jpg" alt="111">
+        </span>
+        <span>
+            <img class="z-my" src="../../z-img/my.jpg" alt="111">
+            <img class="z-xiazai" src="../../z-img/xiazai.jpg" alt="111">
+        </span>
+
+    </header>
+    <!-- 第二部分 搜索栏 -->
+    <div class="z-datu">
+        <img src="../../z-img/banner.png">
+        <form action="#">
+            <div class="z-search">
+                <!-- <label for="sousuo"></label> -->
+                <span></span>
+                <input type="text" name="sousuo" placeholder="输入小区或商圈名开始找房咯！">
+            </div>
+        </form>
+    </div>
+    <br>
+    <!-- 第三部分 导航栏 -->
+    <nav>
+        <ul id="z-nav" v-once>
+            <li>
+                <a v-bind:href="url">
+                    <img src="../../z-img/index_03.png">
+                    <p>二手房</p>
+
+                </a>
+            </li>
+            <li>
+                <a v-bind:href='url1'>
+                    <img src="../../z-img/index_05.png">
+                    <p>新房</p>
+                </a>
+            </li>
+            <li>
+                <a v-bind:href='url2'>
+                    <img src="../../z-img/index_07.png">
+                    <p>租房</p>
+                </a>
+            </li>
+            <li>
+                <a v-bind:href='url3'>
+                    <img src="../../z-img/index_09.png">
+                    <p>卖房</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- 第四部分 白房子图片 -->
+    <div class="z-four">
+        <img src="../../z-img/banner2.png">
+    </div>
+    <!-- 第五部分导航 -->
+    <div class="z-five">
+        <span>
+            <p>热门房源</p>
+            <p>Hot house</p>
+        </span>
+    </div>
+    <!-- 第六部分 -->
+    <div class="z-six">
+        <ul>
+            <li>
+                <div class="z-tupian1">
+                    <img width="200px" height="200px" src="../../z-img/img1.jpg">
+                </div>
+                <div class="z-wenzi1">
+                    <h1>文化部中间层 一层带阁楼...</h1>
+                    <p>
+                        <span>2室1厅96㎡南北 </span>
+                        <span>1105万</span>
+                    </p>
+                    <p>
+                        <span>红庙北里</span>
+                        <span style="color:red">14268元/平</span>
+                    </p>
+                    <p>
+                        <span>学区房</span>
+                        <span>独家</span>
+                    </p>
+                </div>
+            </li>
+            <hr>
+            <li>
+
+                <div class="z-tupian1">
+                    <img width="200px" height="200px" src="../../z-img/img2.png">
+                </div>
+                <div class="z-wenzi1">
+                    <h1>广大水墨 精装复式...</h1>
+                    <p>
+                        <span>2室1厅96㎡南北 </span>
+                        <span style="color:red">280万</span>
+                    </p>
+                    <p>
+                        <span>红庙北里</span>
+                        <span>14268元/平</span>
+                    </p>
+                    <p>
+                        <span>学区房</span>
+                        <span>独家</span>
+                        <span>满五唯一</span>
+                    </p>
+                </div>
+
+            </li>
+            <hr>
+            <li>
+                <div class="z-tupian1">
+                    <img width="200px" height="200px" src="../../z-img/img3.png">
+                </div>
+                <div class="z-wenzi1">
+                    <h1>南北通透两居 精装修..</h1>
+                    <p>
+                        <span>2室1厅96㎡南北 </span>
+                        <span style="color:red">320万</span>
+                    </p>
+                    <p>
+                        <span>红庙北里</span>
+                        <span>14268元/平</span>
+                    </p>
+                    <p>
+                        <span>地铁房</span>
+                        <span>独家</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 第七部分 热门关注 -->
+    <div class="z-seven">
+        <ul>
+            <a href="">
+                <h1>热门关注</h1>
+                <hr>
+            </a>
+            <li>北京二手房</li>
+            <li>北京二手房房价</li>
+            <li>海淀日租房</li>
+            <li>朝阳新房</li>
+        </ul>
+        <ul>
+            <a href="">
+                <h1>友情链接</h1>
+                <hr>
+            </a>
+            <li>北京找房无忧</li>
+            <li>青年家园</li>
+            <li>免税房源</li>
+            <li>满五年唯一免税</li>
+        </ul>
+    </div>
+    <!-- 第八部分 底部 -->
+    <footer>
+        <h1>
+            <a href="">北京找房无忧</a>
+            <a href="">></a>
+            <a href="">首页</a>
+        </h1>
+        <hr>
+        <div class="z-dibu">
+            <div class="z-left">
+                <div class="z-left-left">
+                    <img src="../../z-img/apple.png">
+                </div>
+                <div class="z-left-right">
+                    <p>iphone</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+            <div class="z-right">
+                <div class="z-right-left">
+                    <img src="../../z-img/android.png">
+                </div>
+                <div class="z-right-right">
+                    <p>iphone</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+        </div>
+        <h2>北京找房无忧房地产经纪公司</h2>
+        <h2>网络经营许可证京ICP备20160812号</h2>
+
+    </footer>
+    <!-- <img src="../../z-img/close.png"> -->
+</body>
+
+</html>
+<script>
+    let vm = new Vue({
+        el: "#z-nav",
+        data: {
+            url: "../z-html/z-08头像.html"
+        }
+    })
+    vm.url = "a";
+    // let btn = document.getElementById('btn');
+    // btn.onclick = function () {
+    auto_ = setInterval(function () {
+        let body = document.getElementsByTagName('body')[0];
+        // 创建蒙版 创建元素div
+        // 创建背景透明蒙版
+        let mengban = document.createElement('div');
+        mengban.className = 'mb';
+        body.appendChild(mengban);
+        // 创建logo图片
+        let tupian = document.createElement('img');
+        tupian.src = '../../z-img/download.png';
+        tupian.className = 'pic1';
+        body.appendChild(tupian);
+        // 创建x号
+        let tupian1 = document.createElement('img');
+        tupian1.src = '../../z-img/close.png';
+        tupian1.className = 'pic2';
+        body.appendChild(tupian1);
+        // 创建p标签
+        let word = document.createElement('p');
+        word.innerHTML = '找房无忧';
+        word.className = 'wr';
+        body.appendChild(word);
+        // 
+        let word1 = document.createElement('p');
+        word1.innerHTML = '市场行情，一手掌握';
+        word1.className = 'wr1';
+        body.appendChild(word1);
+        // 
+        let word2 = document.createElement('p');
+        word2.innerHTML = '免费下载';
+        word2.className = 'wr2';
+        body.appendChild(word2);
+        tupian1.onclick = function () {
+            body.removeChild(mengban);
+            body.removeChild(tupian);
+            body.removeChild(tupian1);
+            body.removeChild(word);
+            body.removeChild(word1);
+            body.removeChild(word2);
+
+        }
+
+        clearInterval(auto_);
+    }, 1000)
+
+
+</script>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../z-css/z-09关注的小区.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <span>
+            <img class="z-logo" src="../../z-img/logo.jpg" alt="111">
+        </span>
+        <span>
+            <img class="z-my" src="../../z-img/my.jpg" alt="111">
+            <img class="z-xiazai" src="../../z-img/xiazai.jpg" alt="111">
+        </span>
+
+    </header>
+    <nav>
+        <p id="z-page" v-once>
+            <a v-bind:href="page">首页</a>><a href="">我的</a>><a href="">我关注的小区</a>
+        </p>
+    </nav>
+    <hr>
+    <main>
+        <ul>
+            <li>
+                <div class="z-left">
+                    <img src="../../z-img/img1.png">
+                </div>
+                <div class="z-right">
+                    <h1>辉煌国际</h1>
+                    <p>昌平区-回龙观</p>
+                    <p>
+                        <span>2007年建成</span>
+                        <span> 37050/平</span>
+                    </p>
+                    <p>
+                        板搭结构
+                    </p>
+                </div>
+            </li>
+            <hr>
+            <li>
+                <div class="z-left">
+                    <img src="../../z-img/img2.png">
+                </div>
+                <div class="z-right">
+                    <h1>辉煌国际</h1>
+                    <p>昌平区-回龙观</p>
+                    <p>
+                        <span>2007年建成</span>
+                        <span> 37050/平</span>
+                    </p>
+                    <p>
+                        板搭结构
+                    </p>
+                </div>
+            </li>
+            <hr>
+            <li>
+                <div class="z-left">
+                    <img src="../../z-img/img3.png">
+                </div>
+                <div class="z-right">
+                    <h1>辉煌国际</h1>
+                    <p>昌平区-回龙观</p>
+                    <p>
+                        <span>2007年建成</span>
+                        <span> 37050/平</span>
+                    </p>
+                    <p>
+                        板搭结构
+                    </p>
+                </div>
+            </li>
+            <hr>
+            <li>
+                <div class="z-left">
+                    <img src="../../z-img/img4.png">
+                </div>
+                <div class="z-right">
+                    <h2>辉煌国际</h2>
+                    <p>昌平区-回龙观</p>
+                    <p>
+                        <span>2007年建成</span>
+                        <span> 37050/平</span>
+                    </p>
+                    <p>
+                        板搭结构
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
+<script>
+    let vm = new Vue({
+        el: "#z-page",
+        data: {
+            page: ""
+        }
+    })
+    vm.url = "a";
+</script>

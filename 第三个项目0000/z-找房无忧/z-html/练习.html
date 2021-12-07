@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>验证密码</title>
+</head>
+
+<body>
+    <form action="">
+        密码：<input type="text" id="getPwd">
+        <br>
+        确认密码：<input type="text" id="pwdAgain">
+        <input type="submit" value="提交">
+    </form>
+
+</body>
+
+</html>
+
+<script>
+    var getPwd = document.getElementById('getPwd');
+    var pwdAgain = document.getElementById('pwdAgain');
+    var form = document.getElementsByTagName('form')[0];
+
+    form.onsubmit = function () {
+        var pwd = getPwd.value;
+        console.log(pwd);
+        if (pwd == "") {
+            alert("密码不能为空");
+            return false;
+        }
+        if (pwd.length < 6) {
+            alert("密码必须等于或大于6个字符");
+            return false;
+        }
+        var repwd = pwdAgain.value;
+        if (pwd != repwd) {
+            alert("两次输入的密码不一致");
+            return false;
+        }
+    }
+
+</script>
